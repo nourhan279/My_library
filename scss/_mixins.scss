@@ -1,0 +1,51 @@
+@mixin padding($size) {
+  padding: map-get($spacings, $size);
+}
+
+@mixin margin($size) {
+  margin: map-get($spacings, $size);
+}
+
+@mixin text-color($color-name) {
+  color: map-get($colors, $color-name);
+}
+
+@mixin bg-color($color-name) {
+  background-color: map-get($colors, $color-name);
+}
+
+@mixin font-size($size-name) {
+  font-size: map-get($font-size, $size-name);
+}
+
+@mixin font-weights($weight-name) {
+  font-weight: map-get($font-weights, $weight-name);
+}
+
+@mixin width($w-name) {
+  width: map-get($sizes, $w-name);
+}
+
+@mixin height($h-name) {
+  height: map-get($sizes, $h-name);
+}
+
+@mixin flex-direction($direction) {
+  flex-direction: map-get($flex-directions, $direction);
+}
+
+@mixin justify-content($justify) {
+  justify-content: map-get($flex-justify, $justify);
+}
+
+@mixin align-items($align) {
+  align-items: map-get($flex-align, $align);
+}
+
+@mixin position($position) {
+  position: map-get($positions, $position);
+}
+
+@mixin text-align($align) {
+  text-align: map-get($text-align, $align);
+}

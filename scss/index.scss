@@ -1,0 +1,154 @@
+@import "_variables";
+@import "_reset";
+@import "_mixins";
+@import "_functions";
+
+.nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 10px;
+      a {
+        text-decoration: none;
+        color: $blc;
+
+        &:hover {
+          background-color: $bg-hover;
+        }
+      }
+    }
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.btn {
+  color: $btn-primary;
+  border: 2px solid;
+  border-color: $btn-primary;
+  padding: 15px;
+}
+
+.mx-4 {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.my-4 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+// Padding
+@each $size, $value in $spacings {
+  .p-#{$size} {
+    padding: $value !important;
+  }
+  .pt-#{$size} {
+    padding-top: $value !important;
+  }
+  .pb-#{$size} {
+    padding-bottom: $value !important;
+  }
+  .pl-#{$size} {
+    padding-left: $value !important;
+  }
+  .pr-#{$size} {
+    padding-right: $value !important;
+  }
+}
+
+// Margin
+@each $size, $value in $spacings {
+  .m-#{$size} {
+    margin: $value !important;
+  }
+  .mt-#{$size} {
+    margin-top: $value !important;
+  }
+  .mb-#{$size} {
+    margin-bottom: $value !important;
+  }
+  .ml-#{$size} {
+    margin-left: $value !important;
+  }
+  .mr-#{$size} {
+    margin-right: $value !important;
+  }
+}
+
+//colors
+@each $color-name, $color-value in $colors {
+  .text-#{$color-name} {
+    @include text-color($color-name);
+  }
+  .bg-#{$color-name} {
+    @include bg-color($color-name);
+  }
+}
+
+//font sizes
+@each $size-name, $size-value in $font-size {
+  .fs-#{$size-name} {
+    @include font-size($size-name);
+  }
+}
+
+//font weight
+
+@each $weight-name, $weight-value in $font-weights {
+  .fw-#{$weight-name} {
+    @include font-weights($weight-name);
+  }
+}
+
+//width
+@each $w-name, $w-value in $sizes {
+  .w-#{$w-name} {
+    @include width($w-name);
+  }
+}
+
+//height
+@each $h-name, $h-value in $sizes {
+  .fh-#{$h-name} {
+    @include height($h-name);
+  }
+}
+
+// Flex
+@each $direction-name, $direction-value in $flex-directions {
+  .flex-#{$direction-name} {
+    @include flex-direction($direction-name);
+  }
+}
+
+@each $justify-name, $justify-value in $flex-justify {
+  .justify-#{$justify-name} {
+    @include justify-content($justify-name);
+  }
+}
+
+@each $align-name, $align-value in $flex-align {
+  .items-#{$align-name} {
+    @include align-items($align-name);
+  }
+}
+
+// Position
+@each $position-name, $position-value in $positions {
+  .pos-#{$position-name} {
+    @include position($position-name);
+  }
+}
+
+// Text alignment
+@each $align-name, $align-value in $text-align {
+  .text-#{$align-name} {
+    @include text-align($align-name);
+  }
+}

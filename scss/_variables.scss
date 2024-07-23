@@ -1,0 +1,101 @@
+$blc: #333;
+$bg-hover: #eee;
+$btn-primary: #007bff;
+
+$colors: (
+  gry: #6c757d,
+  creem: rgb(224, 218, 218),
+  grn: #28a745,
+  danger: #d2091d,
+  yelw: #ffc107,
+  lightble: #09dbe7,
+  wht: #f8f9fa,
+  dark: black,
+  vlt: rgb(106, 9, 90),
+  drkble: rgb(16, 3, 132),
+  pnk: rgb(237, 16, 197),
+  org: rgb(210, 81, 26),
+);
+
+$spacings: (
+  4: 4px,
+  8: 8px,
+  16: 16px,
+  20: 20px,
+  30: 30px,
+  40: 40px,
+);
+
+$font-size: (
+  "s": 12px,
+  "m": 16px,
+  "l": 24px,
+  "xl": 30px,
+  "2xl": 36px,
+  "3xl": 42px,
+);
+
+$font-weights: (
+  "light": 300,
+  "normal": 400,
+  "bold": 700,
+);
+
+$sizes: (
+  1: 100px,
+  2: 200px,
+  3: 300px,
+  4: 400px,
+  5: 500px,
+  6: 600px,
+  7: 700px,
+  8: 800px,
+  9: 900px,
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+);
+
+// Flex
+$flex-directions: (
+  "row": row,
+  "row-reverse": row-reverse,
+  "column": column,
+  "column-reverse": column-reverse,
+);
+
+$flex-justify: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "between": space-between,
+  "around": space-around,
+  "evenly": space-evenly,
+);
+
+$flex-align: (
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "baseline": baseline,
+  "stretch": stretch,
+);
+
+// Position
+$positions: (
+  "static": static,
+  "relative": relative,
+  "absolute": absolute,
+  "fixed": fixed,
+  "sticky": sticky,
+);
+
+// Text alignment
+$text-align: (
+  "left": left,
+  "center": center,
+  "right": right,
+  "justify": justify,
+);
